@@ -21,6 +21,7 @@
     "dotenv": "^7.0.0",
     "eventsource": "^1.0.7",
     "influx": "^5.0.7",
-    "os-utils": "0.0.14"
+    "os-utils": "0.0.14",
+    "request": "^2.88.0"
   }
 }
