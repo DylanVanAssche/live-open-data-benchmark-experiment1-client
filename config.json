@@ -1,0 +1,7 @@
+{
+    "influx": {
+        "database": "pubsub_vs_polling"
+    },
+    "defaultPodName": "test",
+    "pollingInterval": 1000
+}

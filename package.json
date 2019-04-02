@@ -1,0 +1,26 @@
+{
+  "name": "live-open-data-benchmark-experiment1-client",
+  "version": "0.0.1",
+  "description": "Listens to stream of open data events",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brechtvdv/realtime-open-data-benchmark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brechtvdv/realtime-open-data-benchmark/issues"
+  },
+  "homepage": "https://github.com/brechtvdv/realtime-open-data-benchmark#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "eventsource": "^1.0.7",
+    "influx": "^5.0.7",
+    "os-utils": "0.0.14"
+  }
+}
