@@ -6,7 +6,7 @@ const config = require('./config.json');
 class BaseClient {
     constructor() {
         let influx_host = (process.env.INFLUX_SERVICE_HOST || 'localhost' );
-        this._server = (process.env.SERVER_SERVICE_HOST || 'localhost' );
+        this._server = 'http://' + (process.env.SERVER_SERVICE_HOST || 'localhost' ) + ':' + (process.env.SERVER_SERVICE_PORT || '4444');
 
         this._influx = new Influx.InfluxDB({
             host: influx_host,
