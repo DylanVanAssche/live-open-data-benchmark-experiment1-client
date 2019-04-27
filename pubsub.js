@@ -16,7 +16,7 @@ class PubSubClient extends BaseClient {
      */
     handleOnMessage(msg) {
         console.debug('Message: ' + JSON.stringify(JSON.parse(msg.data), null, 4));
-        this.saveUsage('received');
+        //this.saveUsage('received');
     }
 
     /**
@@ -27,7 +27,7 @@ class PubSubClient extends BaseClient {
         // Keep track of reconnecting errors
         if(err.readyState === EventSource.CONNECTING) {
             console.info('Reconnecting to EventSource...');
-            this.saveUsage('reconnecting');
+            //this.saveUsage('reconnecting');
         }
         else {
             console.error(`EventSource error: ${JSON.stringify(err, null, 4)}`);

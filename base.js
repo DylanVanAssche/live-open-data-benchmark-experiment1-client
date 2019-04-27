@@ -6,9 +6,10 @@ const config = require('./config.json');
 class BaseClient {
     constructor() {
         let influx_host = (process.env.INFLUX_SERVICE_HOST || 'localhost' );
-        this._server = 'http://' + (process.env.SERVER_SERVICE_HOST || 'localhost' ) + ':' + (process.env.SERVER_SERVICE_PORT || '4444');
+        //this._server = 'http://' + (process.env.SERVER_SERVICE_HOST || 'localhost' ) + ':' + (process.env.SERVER_SERVICE_PORT || '4444');
+        this._server = "https://lc.dylanvanassche.be/sncb/events"
 
-        this._influx = new Influx.InfluxDB({
+/*        this._influx = new Influx.InfluxDB({
             host: influx_host,
             database: config.influx.database,
             schema: [
@@ -54,7 +55,7 @@ class BaseClient {
             })
 
         // Initial usage
-        this.saveUsage('setup');
+        this.saveUsage('setup');*/
     }
 
     /**

@@ -3,5 +3,5 @@
         "database": "experiment1"
     },
     "defaultPodName": "test",
-    "pollingInterval": 1000
+    "pollingInterval": 30000
 }
