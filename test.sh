@@ -5,8 +5,11 @@ echo "Init IPv4..."
 wget -O - -q https://www.wall2.ilabt.iminds.be/enable-nat.sh | sudo bash
 
 echo "Cloning repo..."
-git clone https://github.com/DylanVanAssche/live-open-data-benchmark-experiment1-client
+if [ ! -d "live-open-data-benchmark-experiment1-client" ]; then
+    git clone https://github.com/DylanVanAssche/live-open-data-benchmark-experiment1-client
+fi
 cd live-open-data-benchmark-experiment1-client
+git pull
 
 echo "Install NodeJS and NPM..."
 sudo apt update
