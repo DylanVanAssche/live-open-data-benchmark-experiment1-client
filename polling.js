@@ -20,7 +20,7 @@ class PollingClient extends BaseClient {
 
         // Fire up the polling request to the server and wait for the response
         console.log(self.server)
-        request(self.server, { json: true}, (err, res, body) => {
+        request(self.server + '/poll', { json: true}, (err, res, body) => {
            if(err) {
                return console.error(err);
            }
