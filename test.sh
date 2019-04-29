@@ -21,10 +21,10 @@ export MODE=polling # HTTP polling
 #export MODE=pubsub # SSE
 
 # Spawn clients
-echo "Spawning 100 processes"
-for i in {1..100} ;
+echo "Spawning 250 processes"
+for i in {1..250} ;
 do
-    ( node client.js > /dev/null 2>&1 & ); 
+    (nice -n 5 node client.js > /dev/null 2>&1 & ); 
 done
 
 # End
